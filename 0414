@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的美食地圖</title>
+    <style>
+        body {
+            font-family: 'Arial', '微軟正黑體', sans-serif;
+            background-color: #FEF6E9;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 20px;
+        }
+        
+        .food-card {
+            background-color: #FFF9F0;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: calc(33.33% - 40px);
+            box-sizing: border-box;
+            border: 1px solid #E8D5C4;
+            min-width: 250px;
+            flex-grow: 1;
+        }
+        
+        .food-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .food-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .food-description {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        
+        .map-link {
+            display: block;
+            text-align: center;
+            padding: 8px;
+            background-color: #F3E9DD;
+            color: #8B7E74;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .map-link:hover {
+            background-color: #E8D5C4;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .food-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>我的美食地圖</h1>
+    
+    <div class="container">
+        <div class="food-card">
+            <div class="food-title">滿分小舖</div>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNx-4qwVdAKkVMVEopUoeQy_1xkFXXLu5yBLjPS=w408-h306-k-no" alt="珍珠奶茶" class="food-image">
+            <p class="food-description">餐點美味且份量充足，有多種醬料跟配料可以選，最重要的是價格實惠！</p>
+            <a href="https://maps.app.goo.gl/Bg9CAqfEoCE4yWtW9" class="map-link" target="_blank">查看位置</a>
+        </div>
+        
+        <div class="food-card">
+            <div class="food-title">食間</div>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPp0_-jfX4LisytncwJ_2DgiNcyKii1OpoOtDoJ=w408-h305-k-no" alt="拉麵" class="food-image">
+            <p class="food-description">位於中央大學校後門的亞洲料理店，100元就可以吃到豐盛的午餐 大食量的加十圓，就可以加飯加麵</p>
+            <a href="https://maps.app.goo.gl/6M7gX2dUPJ6qT22a8" class="map-link" target="_blank">查看位置</a>
+        </div>
+        
+        <div class="food-card">
+            <div class="food-title">哈堡堡</div>
+            <img src="https://lh3.googleusercontent.com/p/AF1QipND4RDFbIQugMXy6bSDjcXGSV4TFeY6JyrUHmUD=w408-h306-k-no" alt="草莓蛋糕" class="food-image">
+            <p class="food-description">中央後門的早餐店，菜單多元豐富，是學生的首要選擇。</p>
+            <a href="https://maps.app.goo.gl/4spD8CsfuENPPdPW9" class="map-link" target="_blank">查看位置</a>
+        </div>
+    </div>
+</body>
+</html>
